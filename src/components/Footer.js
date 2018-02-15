@@ -22,9 +22,7 @@ export default class Footer extends Component {
         return (
             <footer className="app-footer">
                 <h2>References:</h2>
-                <ul>
-                    <ReferenceLinkList links={links} />
-                </ul>
+                <ReferenceLinkList links={links} />
             </footer>
         );
     }

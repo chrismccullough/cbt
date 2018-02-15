@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import AddEntry from './components/AddEntry';
 import CBTTemplate from './components/CBTTemplate';
+import Entries from './components/Entries';
 import Footer from './components/Footer';
 
 export default class App extends Component {
@@ -13,6 +14,10 @@ export default class App extends Component {
             <Header />
 
             <CBTTemplate />
+
+            <AddEntry />
+
+            <Entries />
 
             <Footer />
       </div>
