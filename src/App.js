@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
 
-class App extends Component {
+import Header from './components/Header';
+import AddEntry from './components/AddEntry';
+import CBTTemplate from './components/CBTTemplate';
+import Footer from './components/Footer';
+
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">CBT App</h1>
-        </header>
-        <p className="App-intro">
+        <div className="app">
+            <Header />
 
-        </p>
+            <CBTTemplate />
+
+            <Footer />
       </div>
     );
   }
 }
-
-export default App;
