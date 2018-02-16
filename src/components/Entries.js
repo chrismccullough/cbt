@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Moment from 'react-moment';
 
 function EntriesList(props) {
     const entries = props.entries;
     const entryItems = entries.map((entry, index) =>
         <li key={index} className="entry">
-            <span className="date">{entry.date}</span>
+            <span className="date"><Moment format="MM/DD/YYYY" date={entry.date} /></span>
             <span className="title">{entry.title}</span>
+            -
+            <span className="text">{entry.text}</span>
         </li>
     );
 

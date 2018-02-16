@@ -32,6 +32,14 @@
     padding: 20px;
 }
 
+.add-entry {
+
+}
+
+.add-entry .date {
+    margin-bottom: 10px;
+}
+
 .entries {
     border: 1px solid #000;
     padding: 20px;
